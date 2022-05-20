@@ -29,3 +29,13 @@ strcpy_s(complaint_id, pid);
 strcpy_s(description,pdescription);
 date = pdate;
 }
+void Complaint::answer()
+{
+}
+void Complaint::displayComplaint()
+{
+}
+Complaint::~Complaint()
+{
+cout << "Destructor running for Complaint class" << endl;
+}
