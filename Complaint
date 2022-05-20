@@ -1,0 +1,31 @@
+class Complaint
+{
+	private:
+		char complaint_id[20];
+		char description[500];
+		int date;
+	public:
+		Complaint();
+		Complaint(const char pid[],const char pdescription[],int pdate);
+		void answer();
+		void displayComplaint();
+	~Complaint();
+};
+
+#include "Complaint.h"
+#include “Support_Material.h”
+#include “Registered_User.h”
+#include “Administrator.h”
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+Complaint::Complaint()
+{	
+}
+Complaint::Complaint(const char pid[],const char pdescription[],int pdate)
+{
+strcpy_s(complaint_id, pid);
+strcpy_s(description,pdescription);
+date = pdate;
+}
