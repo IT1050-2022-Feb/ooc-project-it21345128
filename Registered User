@@ -1,0 +1,51 @@
+Class registereduser
+
+class registeredUser : public userProfile{
+protected : 
+int userId;
+char email[20]:
+public:
+registeredUser(){};
+
+void display() {
+cout << "this is registeredUser class. derived class 
+from userProfile" << endl;}
+void editDetails();
+void fileComplaint();
+void order();
+void pay();
+};
+
+#include "RegisteredUser.h"
+#include <iostream>
+#include <cstring>
+using namespace std;
+RegisteredUser::RegisteredUser()
+{
+}
+RegisteredUser::RegisteredUser(const char pusername[], const char pemail[])
+{
+strcpy_s(username, pusername,(up));
+strcpy_s(email, pemail);
+cout << "Constructor running for Registered User class" << endl;
+}
+void RegisteredUser::displayDetails()
+{
+}
+void RegisteredUser::editDetails()
+{
+}
+void RegisteredUser::filecomplaint
+{
+}
+void RegisteredUser::pay()
+{
+}
+void RegisteredUser::order
+{
+}
+RegisteredUser::~RegisteredUser()
+{
+cout << "Deconstructor running for Registered User class" << endl;
+}
+
