@@ -1,0 +1,50 @@
+class supportMaterial
+
+
+class supportMaterial : public complaint{
+private : 
+char complaintId [];
+int uploadedDate;
+
+public:
+	supportMaterial();
+	supportMaterial(const char cid[],const char cdescription[],int cdate);
+	void addsupportMaterial();
+	void deletesupportMateria()l;
+	voiddownloadsupportMaterial();
+	void displaysupportMaterial();
+	~Complaint();
+};
+
+
+#include "Support_Material.h"
+#include "Complaint.h"
+#include <iostream>
+#include <cstring>
+using namespace std;
+Support_Material::Support_Material()
+{
+}
+Support_Material::Support_Material(const char cid[],const char cdescription[], int cdate)
+{
+strcpy_s(description, sdescription);
+uploadedDate = date;
+cout << "Constructor running for Support_Material class" << endl;
+}
+void Support_Material::updateDetails()
+{
+}
+void Support_Material::displaySupport_Material()
+{
+}
+void Support_Material::editSupport_Material()
+{
+}
+void Support_Material::download()
+{
+}
+Support_Material::~Support_Material()
+{
+cout << "Destructor running for Support_Material class" << endl;
+}
+}
